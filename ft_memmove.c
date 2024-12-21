@@ -9,7 +9,8 @@
 /*   Updated: 2024/12/17 16:37:54 by migorteg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+// This function works similar to ft_memcpy, with the difference of copying backwards from the end to the start to avoid
+// overwritting in cases where index of dest > index of source.
 #include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
